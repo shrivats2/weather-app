@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+.body {
+  margin: 0px;
+}
+
+.App {
+  background-image: url("/public/images/weather.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #eeeeee;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.container {
+  width: 34.375rem;
+  height: 34.375rem;
+  margin: 9.375rem auto;
+}
+
+.glass {
+  background: linear-gradient(135deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0));
+  backdrop-filter: blur(0.625rem);
+  -webkit-backdrop-filter: blur(0.625rem);
+  border-radius: 1.25rem;
+  border: 0.063rem solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.37);
+}
+
+.form {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.input {
+  border: none;
+  outline: none;
+  height: 20px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(#46f8b1 0%, #0fb272 100%);
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.icon {
+  padding: 0px;
+}
+
+.weather_data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.weather_title h1 {
+  text-transform: uppercase;
+}
+
+.weather_title h3,
+p,
+li {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 10px;
+}
+
+.weather_status ul li {
+  list-style-type: none;
+  text-align: center;
+}
+
+.weather_status li span {
+  margin-left: 50px;
+}
+
+.top {
+  height: 75px;
+  color: whitesmoke;
+  padding: 5px;
+  border-radius: 20px 20px 0 0;
+  font-family: 'Recursive', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  text-transform: uppercase;
+  background-image: linear-gradient(-225deg,
+      #0088ff 0%,
+      #44107a 29%,
+      #ff2b72 67%,
+      #ec5ffffe 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.day {
+  padding: 12px;
+  color: rgb(0, 0, 0);
+  font-family: 'Recursive', sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  text-shadow: 0.125rem 0.125rem 0.125rem #e4dede;
+}
+
+.weather_update {
+  padding: 10px;
+}
+
+.img {
+  height: 6.563rem;
+  width: 6.563rem;
+  float: left;
+}
+
+.description {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.563rem;
+  padding: 0px;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  text-shadow: 0.125rem 0.125rem 0.125rem #e4dede;
+}
+
+.moredesp {
+  padding: 15px;
+  color: rgb(0, 0, 0);
+  font-family: 'Recursive', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-shadow: 1.3px 0px rgb(204 204 204);
+  text-transform: capitalize;
+  margin-left: 40px;
+}
+
+.temp {
+  padding: 0px;
+  color: rgb(0 0 0 / 87%);
+  font-family: 'Recursive', sans-serif;
+  font-size: 1.563rem;
+  font-weight: 700;
+  text-shadow: 0.125rem 0.125rem 0.125rem #e4dede;
+  white-space: nowrap;
+}
+
+.humid {
+  padding: 0px;
+  color: rgb(0 0 0 / 87%);
+  font-family: 'Recursive', sans-serif;
+  font-size: 1.563rem;
+  font-weight: 700;
+  text-shadow: 0.125rem 0.125rem 0.125rem #e4dede;
+  white-space: nowrap;
+  margin-left: 50px;
+}
+
+.wind {
+  padding: 0px;
+  color: rgb(0 0 0 / 87%);
+  font-family: 'Recursive', sans-serif;
+  font-size: 1.563rem;
+  font-weight: 700;
+  text-shadow: 0.125rem 0.125rem 0.125rem #e4dede;
+  white-space: nowrap;
+  margin-left: 50px;
+}
+
+.weather_status {
+  justify-content: center;
+}
+
+.date {
+  padding: 0px;
+  color: rgb(0 0 0 / 87%);
+  font-family: 'Recursive', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-shadow: 0.125rem 0.125rem 0.125rem #e4dede;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 332px;
+  }
+}
