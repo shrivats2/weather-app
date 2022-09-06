@@ -5,7 +5,7 @@ import axios from "axios";
 import Form from "./components/Form";
 import Weather from "./components/Weather";
 
-const API_KEY = "29f1fdea02f8751ea1945ef022dbb331";
+const api_key = process.env.REACT_APP_API_KEY;
 
 export default class App extends React.Component {
   constructor(props) {
@@ -31,7 +31,7 @@ export default class App extends React.Component {
     let longitude = position.coords.longitude;
     let latitude = position.coords.latitude;
 
-    let apiKey = "29f1fdea02f8751ea1945ef022dbb331";
+    let apiKey = process.env.REACT_APP_API_KEY;
     let unit = "metric";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${unit}`;
 
@@ -61,7 +61,7 @@ export default class App extends React.Component {
         "https://api.openweathermap.org/data/2.5/weather?q=" +
         this.state.term +
         "&units=metric&appid=" +
-        API_KEY
+        api_key
       )
       .then(res => {
         this.setState({
