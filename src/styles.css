@@ -23,6 +23,12 @@
   margin: 9.375rem auto;
 }
 
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 332px;
+  }
+}
+
 .glass {
   background: linear-gradient(135deg,
       rgba(255, 255, 255, 0.1),
@@ -211,10 +217,4 @@ li {
   font-weight: 700;
   text-shadow: 0.125rem 0.125rem 0.125rem #e4dede;
   white-space: nowrap;
-}
-
-@media only screen and (max-width: 800px) {
-  .container {
-    width: 332px;
-  }
 }
